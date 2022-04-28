@@ -58,7 +58,7 @@ stages = ['''
 ''']
 
 #Create a list of words
-word_list = ["Asexual", "Biphobia", "Deadnaming", "Homosexual", "Intersex", "Pronoun", "Queer", "Transphobia"]
+word_list = ["Asexual", "Biphobia", "Deadnaming", "Homosexual", "Intersex", "Pronoun", "Queer", "Transphobia", "Ally", "Cisgender", "Genderqueer", "Pansexual", "Polyamnory", "Transmasculine", "Heterosexism", "Passing", "Oppression", "Prejudice", "Discrimination", "Cisnormativity", "Transfeminine", "Androgynous", "Androsexual", "Demiromantic", "Fluid", "Gynosexual", "Masculinity", "Omnisexual", "Queerplatonic", "Sapiosexual", "Skoliosexual", "Sexuality", "Stealth", "Stereotype"]
 
 #Randomly choose a word from the word_list and assign it to a variable called chosen_word.
 chosen_word = str(random.choice(word_list))
