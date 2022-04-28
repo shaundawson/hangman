@@ -6,25 +6,35 @@ word_list = ["Asexual", "Biphobia", "Deadnaming", "Homosexual", "Intersex", "Pro
 #Randomly choose a word from the word_list and assign it to a variable called chosen_word.
 chosen_word = str(random.choice(word_list))
 
+#Testing code
+print(f"Psst, ths solution is {chosen_word}")
+
 # Split string to each letter 
 def split(word): 
     return [char for char in word] 
-chosen_word = (split(chosen_word.lower())) 
+chosen_word = (split(chosen_word.lower()))
 
+#Create an empty list called display. 
+display = []
 
+# Store length of word in a variable
+word_length = len(chosen_word)
+
+#For each letter in the chosen_word, add a "_" to display
+for _ in range(word_length):
+    display += "_"
+print(display)
+    
 #Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase. 
-guess = input("Guess a letter\n")
-
-#Check if the letter the user guessed (guess) is one of the letters in the chosen_word. Generate as many blanks as letters in a word.
-word2 = []
-for l in chosen_word:  
-    if l  == guess:
-        word2.append(guess)
-    else:
-        word2.append('_')
-print(word2)
-
-#If the guessed letter is in the word, replace the blank letter and check if all the blanks are filled. If all the blanks are filled the game is over and you win. 
+guess = input("Guess a letter:").lower()
 
 
-#If the guessed letter is not in the word, you lose a life. If you've run out of lives, the game is over and you lose. 
+#Loop through each position in the chosen_word 
+for position in range(word_length):
+    letter = chosen_word[position]
+     #If the letter in that position  matches 'guess' 
+    if letter  == guess:
+        #Reveal that letter in the display at postion
+        display[position] = letter
+
+print(display)
