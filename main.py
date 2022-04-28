@@ -25,7 +25,7 @@ for _ in range(word_length):
     display += "_"
 print(display)
     
-# While there are blanks in display
+#While there are blanks in display
 while not end_of_game:
     #Ask the user to guess a letter and assign their answer to a variable called guess. 
     guess = input("Guess a letter:").lower()
